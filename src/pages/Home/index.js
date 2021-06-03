@@ -11,6 +11,8 @@ import { ContainerLogo, Logo, ContainerContent, Title, SubTitle, ContainerInput,
 
 import api from'../../services/api';
 
+import { saveLink} from '../../utils/storeLinks';
+
 export default function Home(){
 
     const [loading,setLoading] = useState(false);
@@ -31,6 +33,10 @@ export default function Home(){
             setData(response.data);
 
             setModalVisible(true);
+
+            //Deu td certo precisa salvar
+
+            saveLink('sujeitolinks', response.data);
 
             Keyboard.dismiss();
             setLoading(false);
