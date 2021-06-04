@@ -20,10 +20,11 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.willstudios.mylink",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"}
+        "backgroundColor": "#FFFFFF"},
+        "package": "com.willstudios.mylink"
+        
       }
      
     },
